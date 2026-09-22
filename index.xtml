@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nizom — Мағозаи онлайн</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">N</span>
+                <span>Nizom</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Асосӣ</a>
+                <a href="#products">Маҳсулот</a>
+                <a href="#categories">Категорияҳо</a>
+                <a href="register.html">Бақайдгирӣ</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 6h15l-1.5 9h-12z"/>
+                        <circle cx="9" cy="20" r="1"/>
+                        <circle cx="18" cy="20" r="1"/>
+                        <path d="M6 6L5 2H2"/>
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <a href="register.html" class="btn btn-primary btn-sm">Ворид шудан</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge">Навтарин коллексия 2026</span>
+                <h1>Мағозаи муосир<br>барои ҳаёти зебо</h1>
+                <p>Маҳсулоти аълосифат бо нархи муносиб. Интихоби васеъ, расонидани зуд ва кафолати сифат.</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn btn-primary">Харид кунед</a>
+                    <a href="register.html" class="btn btn-outline">Ҳисоб кушоед</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80" alt="Мағоза">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Категорияҳо</h2>
+                <p>Интихоби маҳсулотро осон кунед</p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="cat-icon">📱</div>
+                    <h3>Электроника</h3>
+                    <span>124 маҳсулот</span>
+                </div>
+                <div class="category-card">
+                    <div class="cat-icon">👕</div>
+                    <h3>Либос</h3>
+                    <span>89 маҳсулот</span>
+                </div>
+                <div class="category-card">
+                    <div class="cat-icon">🏠</div>
+                    <h3>Хона</h3>
+                    <span>56 маҳсулот</span>
+                </div>
+                <div class="category-card">
+                    <div class="cat-icon">⌚</div>
+                    <h3>Соат & Аксессуар</h3>
+                    <span>43 маҳсулот</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Маҳсулоти машҳур</h2>
+                <p>Беҳтаринҳоро интихоб кунед</p>
+            </div>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container cta-content">
+            <h2>Ҳисоби худро кушоед ва 10% тахфиф гиред</h2>
+            <p>Ба қайд гиред ва аз пешниҳодҳои махсус баҳраманд шавед</p>
+            <a href="register.html" class="btn btn-white">Бақайдгирӣ</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">N</span>
+                    <span>Nizom</span>
+                </a>
+                <p>Мағозаи онлайн бо сифати баланд ва хизматрасонии аъло.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Пайвандҳо</h4>
+                <a href="index.html">Асосӣ</a>
+                <a href="#products">Маҳсулот</a>
+                <a href="register.html">Бақайдгирӣ</a>
+            </div>
+            <div class="footer-links">
+                <h4>Дастгирӣ</h4>
+                <a href="#">Тамос</a>
+                <a href="#">Саволҳои зиёд</a>
+                <a href="#">Расонидан</a>
+            </div>
+            <div class="footer-links">
+                <h4>Иҷтимоӣ</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Telegram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Nizom. Ҳамаи ҳуқуқҳо ҳифз шудаанд.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Сабад</h3>
+            <button id="closeCart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Сабад холӣ аст</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Ҷамъ:</span>
+                <strong id="cartTotal">0 TJS</strong>
+            </div>
+            <button class="btn btn-primary btn-block">Пардохт</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

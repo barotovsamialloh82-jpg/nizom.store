@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бақайдгирӣ — Nizom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">N</span>
+                <span>Nizom</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Асосӣ</a>
+                <a href="index.html#products">Маҳсулот</a>
+                <a href="register.html" class="active">Бақайдгирӣ</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="index.html" class="btn btn-outline btn-sm">Бозгашт</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="auth-main">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h1>Ҳисоб кушоед</h1>
+                <p>Ба Nizom ҳамроҳ шавед ва аз харидҳо лаззат баред</p>
+            </div>
+
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="fullname">Номи пурра</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Ном ва насаб" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Почтаи электронӣ</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Рақами телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+992 90 000 00 00" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Рамз</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" placeholder="Ҳадди ақал 8 аломат" required minlength="8">
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Такрори рамз</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Рамзро такрор кунед" required>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">Ман <a href="#">шартҳои истифода</a>-ро қабул мекунам</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Бақайдгирӣ</button>
+            </form>
+
+            <div class="auth-footer">
+                <p>Аллакай ҳисоб доред? <a href="#" id="showLogin">Ворид шавед</a></p>
+            </div>
+
+            <!-- Success message (hidden by default) -->
+            <div class="success-message" id="successMessage" style="display: none;">
+                <div class="success-icon">✓</div>
+                <h2>Муваффақ шудед!</h2>
+                <p>Ҳисоби шумо бомуваффақият сохта шуд.</p>
+                <a href="index.html" class="btn btn-primary">Ба асосӣ равед</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
